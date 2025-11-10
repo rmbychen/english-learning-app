@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { supabase, UserProfile, Vocabulary } from './lib/supabase'
-import { Music, Zap, Trophy, BookOpen, Target, Video, Gamepad2, Zap as Quick, Headphones } from 'lucide-react'
+import { Music, Zap, Trophy, BookOpen, Target, Video, Gamepad2, Zap as Quick, Headphones, Menu, X } from 'lucide-react'
 import './App.css'
+import { useIsMobile } from './hooks/use-mobile'
 
 // 组件
 import Auth from './components/Auth'
@@ -17,6 +18,8 @@ function App() {
   const [session, setSession] = useState(null)
   const [loading, setLoading] = useState(true)
   const [currentView, setCurrentView] = useState<'dashboard' | 'learning' | 'rhythm' | 'video' | 'game' | 'quick' | 'multimedia'>('dashboard')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     // 处理邮件确认回调（URL中的hash参数）
@@ -102,6 +105,21 @@ function App() {
     return <Auth />
   }
 
+  const menuItems = [
+    { id: 'dashboard', label: '仪表盘', icon: Target, view: 'dashboard' as const },
+    { id: 'learning', label: '学习', icon: BookOpen, view: 'learning' as const },
+    { id: 'rhythm', label: '节奏挑战', icon: Zap, view: 'rhythm' as const },
+    { id: 'video', label: '视频学习', icon: Video, view: 'video' as const },
+    { id: 'game', label: '游戏模式', icon: Gamepad2, view: 'game' as const },
+    { id: 'quick', label: '快速学习', icon: Quick, view: 'quick' as const },
+    { id: 'multimedia', label: '综合练习', icon: Headphones, view: 'multimedia' as const },
+  ]
+
+  const handleViewChange = (view: typeof currentView) => {
+    setCurrentView(view)
+    setMobileMenuOpen(false)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* 顶部导航栏 */}
@@ -110,94 +128,83 @@ function App() {
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center space-x-2">
               <Music className="w-8 h-8 text-indigo-600" />
-              <h1 className="text-2xl font-bold text-gray-900">节奏英语学习</h1>
+              <h1 className="text-xl sm:text-2xl font-bold text-gray-900">节奏英语学习</h1>
             </div>
-            <div className="flex items-center space-x-4">
+            
+            {/* 桌面端导航 */}
+            {!isMobile && (
+              <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
+                {menuItems.map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => handleViewChange(item.view)}
+                      className={`px-2 lg:px-4 py-2 rounded-lg transition-colors text-sm lg:text-base ${
+                        currentView === item.view
+                          ? 'bg-indigo-600 text-white'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                    >
+                      <Icon className="w-4 h-4 lg:w-5 lg:h-5 inline mr-1 lg:mr-2" />
+                      <span className="hidden lg:inline">{item.label}</span>
+                    </button>
+                  )
+                })}
+                <button
+                  onClick={() => supabase.auth.signOut()}
+                  className="px-2 lg:px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors text-sm lg:text-base"
+                >
+                  退出
+                </button>
+              </div>
+            )}
+
+            {/* 移动端菜单按钮 */}
+            {isMobile && (
               <button
-                onClick={() => setCurrentView('dashboard')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'dashboard'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                aria-label="菜单"
               >
-                <Target className="w-5 h-5 inline mr-2" />
-                仪表盘
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
-              <button
-                onClick={() => setCurrentView('learning')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'learning'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <BookOpen className="w-5 h-5 inline mr-2" />
-                学习
-              </button>
-              <button
-                onClick={() => setCurrentView('rhythm')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'rhythm'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <Zap className="w-5 h-5 inline mr-2" />
-                节奏挑战
-              </button>
-              <button
-                onClick={() => setCurrentView('video')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'video'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <Video className="w-5 h-5 inline mr-2" />
-                视频学习
-              </button>
-              <button
-                onClick={() => setCurrentView('game')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'game'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <Gamepad2 className="w-5 h-5 inline mr-2" />
-                游戏模式
-              </button>
-              <button
-                onClick={() => setCurrentView('quick')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'quick'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <Quick className="w-5 h-5 inline mr-2" />
-                快速学习
-              </button>
-              <button
-                onClick={() => setCurrentView('multimedia')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  currentView === 'multimedia'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                <Headphones className="w-5 h-5 inline mr-2" />
-                综合练习
-              </button>
-              <button
-                onClick={() => supabase.auth.signOut()}
-                className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-              >
-                退出
-              </button>
-            </div>
+            )}
           </div>
+
+          {/* 移动端下拉菜单 */}
+          {isMobile && mobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-200 py-4">
+              <div className="space-y-2">
+                {menuItems.map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => handleViewChange(item.view)}
+                      className={`w-full flex items-center px-4 py-3 rounded-lg transition-colors ${
+                        currentView === item.view
+                          ? 'bg-indigo-600 text-white'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                    >
+                      <Icon className="w-5 h-5 mr-3" />
+                      <span>{item.label}</span>
+                    </button>
+                  )
+                })}
+                <button
+                  onClick={() => {
+                    supabase.auth.signOut()
+                    setMobileMenuOpen(false)
+                  }}
+                  className="w-full flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <span>退出登录</span>
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
