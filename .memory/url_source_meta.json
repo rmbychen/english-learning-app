@@ -1,0 +1,167 @@
+{
+  "_source_id": 22,
+  "sources": {
+    "多媒体学习资源和方法研究": {
+      "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.01467/full": {
+        "id": 1,
+        "publisher": "Frontiers in Psychology",
+        "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.01467/full",
+        "title": "Bringing back the body into the mind: The role of gestures in foreign language learning",
+        "info": "探讨了手势在外语词汇学习中的积极作用，支持具身认知理论。研究表明手势能够显著提高外语词汇的即时记忆效果，对记忆的增强效应在短期内最为显著，长期保持能力强可持续14个月。"
+      },
+      "https://www.mdpi.com/2076-328X/15/8/997": {
+        "id": 2,
+        "publisher": "MDPI",
+        "url": "https://www.mdpi.com/2076-328X/15/8/997",
+        "title": "Your Body as a Tool to Learn Second Language Vocabulary: A Comprehensive Review",
+        "info": "全面探讨了手势增强第二语言词汇学习的理论基础、实证证据和神经科学基础。研究表明人体感觉运动参与可以有效支持长期单词学习，并提供了具体的手势类型和年龄差异分析。"
+      },
+      "https://www.sciencedirect.com/science/article/pii/S2666389921001598": {
+        "id": 3,
+        "publisher": "ScienceDirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666389921001598",
+        "title": "Situated language learning via interactive narratives",
+        "info": "研究如何赋予学习代理理解和生成上下文相关自然语言的能力，重点研究了互动叙事作为训练环境。假设互交性和环境基础是创建此类代理的两个关键组件。"
+      },
+      "https://www.berlitz.com/zh-hans-cn/blog/artificial-intelligence-ai-language-learning": {
+        "id": 4,
+        "publisher": "Berlitz",
+        "url": "https://www.berlitz.com/zh-hans-cn/blog/artificial-intelligence-ai-language-learning",
+        "title": "人工智能如何彻底改变语言学习",
+        "info": "详细介绍了AI在语言学习中的应用、具体技术、未来发展趋势。涵盖了个性化学习、实时反馈、游戏化体验、跨文化交际培训等多个方面。"
+      },
+      "https://www.sohu.com/a/950429410_100210272": {
+        "id": 5,
+        "publisher": "搜狐网",
+        "url": "https://www.sohu.com/a/950429410_100210272",
+        "title": "隆成义记忆学：学习中最常用且效果好的学习方法——联想学习法",
+        "info": "详细介绍了联想学习法中的图像记忆技巧，包括图像联想法和两两图像联想法的具体操作和应用方法。"
+      },
+      "https://baike.baidu.com/item/%E5%85%A8%E8%BA%AB%E5%8F%8D%E5%BA%94%E6%B3%95/9026182": {
+        "id": 6,
+        "publisher": "百度百科",
+        "url": "https://baike.baidu.com/item/%E5%85%A8%E8%BA%AB%E5%8F%8D%E5%BA%94%E6%B3%95/9026182",
+        "title": "全身反应法",
+        "info": "介绍了TPR(全身反应法)的理论原理、具体方法和在语言学习中的应用。该方法主张通过身体动作将语言与行为相关联进行教学，强调听力理解领先原则。"
+      }
+    },
+    "音乐与速度游戏元素融入英语学习研究": {
+      "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2013.00279/full": {
+        "id": 7,
+        "publisher": "Frontiers in Neuroscience",
+        "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2013.00279/full",
+        "title": "How musical training affects cognitive development: rhythm, melody, and neural plasticity",
+        "info": "音乐训练对认知发展和语言学习的神经科学机制，包括听觉皮层、运动皮层、胼胝体等大脑结构变化，以及音乐训练对言语记忆、第二语言发音准确性、阅读能力的远迁移效应"
+      },
+      "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2016.00425/full": {
+        "id": 8,
+        "publisher": "Frontiers in Human Neuroscience",
+        "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2016.00425/full",
+        "title": "The Beat to Read: A Cross-Lingual Investigation of Beat Perception and Reading Ability",
+        "info": "节拍感知与阅读能力的跨语言关联研究，发现规律性节拍检测能力与快速阅读能力存在显著相关性（Spearman's rho = -0.47, p < 0.01），且这种关系在不同语言中具有普遍性"
+      },
+      "https://www.sohu.com/a/921657338_122004016": {
+        "id": 9,
+        "publisher": "搜狐新闻",
+        "url": "https://www.sohu.com/a/921657338_122004016",
+        "title": "多邻国收购音游公司NextBeat，音乐与学习的完美结合",
+        "info": "多邻国收购NextBeat音游公司的案例，NextBeat累计游戏下载量超过1亿次，多邻国音乐课程测试版已有数百万用户参与"
+      },
+      "https://www.sciencedirect.com/science/article/pii/S2212868923000168": {
+        "id": 10,
+        "publisher": "International Journal of Child-Computer Interaction",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2212868923000168",
+        "title": "Using multimodal educational apps to increase the vocabulary learning",
+        "info": "多模态词汇教学应用对一年级学生词汇学习效果的研究，69名学生参与实验，发现多模态应用结合录制词汇解释能显著提升词汇学习效果"
+      },
+      "https://blog.csdn.net/qq_42568323/article/details/147805735": {
+        "id": 11,
+        "publisher": "CSDN博客",
+        "url": "https://blog.csdn.net/qq_42568323/article/details/147805735",
+        "title": "音乐节奏游戏：从声波分析到动态映射的沉浸式设计",
+        "info": "音乐节奏游戏的技术设计与实现，包括实时频谱分析、节拍追踪算法、动态难度映射等核心技术模块，提供了完整的Python实现代码"
+      },
+      "https://docs.feishu.cn/v/wiki/GpwbwKDyui4DV4k3EAKcTCV0ndc/a5": {
+        "id": 12,
+        "publisher": "飞书文档",
+        "url": "https://docs.feishu.cn/v/wiki/GpwbwKDyui4DV4k3EAKcTCV0ndc/a5",
+        "title": "沉浸式音乐教育：VR重构乐器学习新范式",
+        "info": "AI时代音乐产业革命中沉浸式音乐教育的技术应用，包括混合现实系统、智能乐器、情感识别系统等12个技术变革维度与28个产业创新案例"
+      }
+    },
+    "艾宾浩斯遗忘曲线和间隔重复算法研究": {
+      "https://www.mdpi.com/2076-328X/15/7/924": {
+        "id": 13,
+        "publisher": "MDPI",
+        "url": "https://www.mdpi.com/2076-328X/15/7/924",
+        "title": "为什么经验遗忘曲线偏离实际遗忘率：遗忘的分布模型",
+        "info": "提供了遗忘曲线偏差的分布模型研究，解释了经验遗忘曲线与个体遗忘率之间的差异，提出了双变量分布模型和正态分布假设"
+      },
+      "https://zhuanlan.zhihu.com/p/671340049": {
+        "id": 14,
+        "publisher": "知乎",
+        "url": "https://zhuanlan.zhihu.com/p/671340049",
+        "title": "FSRS现已成为世界上最精确的间隔重复算法",
+        "info": "详细介绍了FSRS算法的原理和性能，包括v3和v4版本的改进，以及在2万个集合和7.38亿次复习数据上的基准测试结果"
+      },
+      "https://blog.csdn.net/sunyata2022/article/details/131086320": {
+        "id": 15,
+        "publisher": "CSDN",
+        "url": "https://blog.csdn.net/sunyata2022/article/details/131086320",
+        "title": "间隔重复记忆法SM-2算法的实现与应用",
+        "info": "提供了SM-2算法的完整实现细节，包括E-Factor计算、间隔公式、质量评分系统和TypeScript代码示例"
+      },
+      "https://www.zhihu.com/question/364132423": {
+        "id": 16,
+        "publisher": "知乎",
+        "url": "https://www.zhihu.com/question/364132423",
+        "title": "艾宾浩斯记忆曲线有无数学模型？",
+        "info": "解释了艾宾浩斯遗忘曲线的数学模型，包括可提取性R和稳定性S变量，以及基于负指数衰减函数的记忆保持模型"
+      },
+      "https://www.mdpi.com/2076-3417/14/13/5591": {
+        "id": 17,
+        "publisher": "MDPI",
+        "url": "https://www.mdpi.com/2076-3417/14/13/5591",
+        "title": "DRL-SRS: A Deep Reinforcement Learning Approach for Optimizing Spaced Repetition",
+        "info": "介绍了基于深度强化学习的间隔重复调度优化框架DRL-SRS，包括THLR记忆预测模块、仿真环境和DQN+LSTM机制"
+      }
+    },
+    "英语学习APP游戏化机制研究": {
+      "https://www.sohu.com/a/881315373_121850782": {
+        "id": 18,
+        "publisher": "搜狐",
+        "url": "https://www.sohu.com/a/881315373_121850782",
+        "title": "多邻国：如何用游戏化机制让数亿人坚持学习？",
+        "info": "多邻国游戏化机制的详细分析，包括闯关式技能树设计、经验值奖励系统、连胜激励机制、80%准确率难度平衡等核心要素"
+      },
+      "https://zhuanlan.zhihu.com/p/312981715": {
+        "id": 19,
+        "publisher": "知乎",
+        "url": "https://zhuanlan.zhihu.com/p/312981715",
+        "title": "产品分析—墨墨背单词",
+        "info": "墨墨背单词的全面产品分析，包括游戏化设计、社交功能、用户群体分析、竞争优势等详细信息"
+      },
+      "https://sspai.com/post/87587": {
+        "id": 20,
+        "publisher": "少数派",
+        "url": "https://sspai.com/post/87587",
+        "title": "5 个维度、6 个 App，帮你选出最适合自己的「背单词神器」",
+        "info": "六款主流背单词APP的深度评测对比，包括墨墨、扇贝、百词斩、不背单词、欧路词典、可可英语的游戏化机制分析"
+      },
+      "https://www.woshipm.com/evaluating/4425622.html": {
+        "id": 21,
+        "publisher": "人人都是产品经理",
+        "url": "https://www.woshipm.com/evaluating/4425622.html",
+        "title": "高效背单词工具对比：扇贝单词、墨墨背单词、百词斩",
+        "info": "四款主流背单词APP游戏化机制的全面对比分析，详细分析了扇贝、百词斩、墨墨、不背单词的激励机制"
+      },
+      "https://www.maimemo.com/": {
+        "id": 22,
+        "publisher": "墨墨背单词官网",
+        "url": "https://www.maimemo.com/",
+        "title": "墨墨背单词 - 高效抗遗忘，轻松规划海量词汇记忆",
+        "info": "墨墨背单词官网深度分析，包括等级系统、成就系统、社交功能、连续学习激励机制等一手信息"
+      }
+    }
+  }
+}

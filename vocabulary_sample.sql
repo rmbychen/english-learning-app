@@ -1,0 +1,22 @@
+-- 示例词汇数据，包含语音文件URL字段
+INSERT INTO vocabulary (word, pronunciation, definition_cn, definition_en, example_sentence, translation, audio_url, image_url, difficulty_level, category) VALUES
+('apple', '/ˈæpəl/', '苹果', 'a round fruit with red, green, or yellow skin', 'I eat an apple every day.', '我每天吃一个苹果。', 'audio/apple.mp3', NULL, 1, 'food'),
+('computer', '/kəmˈpjuːtər/', '计算机', 'an electronic machine that processes data', 'I use my computer for work.', '我用电脑工作。', 'audio/computer.mp3', NULL, 2, 'technology'),
+('beautiful', '/ˈbjuːtɪfəl/', '美丽的', 'very attractive or pleasing to look at', 'The sunset is beautiful tonight.', '今晚的日落很美。', 'audio/beautiful.mp3', NULL, 2, 'adjective'),
+('wonderful', '/ˈwʌndərfəl/', '精彩的', 'extremely good or impressive', 'What a wonderful day!', '多么美好的一天！', 'audio/wonderful.mp3', NULL, 2, 'adjective'),
+('important', '/ɪmˈpɔːrtənt/', '重要的', 'of great significance or value', 'This is an important meeting.', '这是一个重要的会议。', 'audio/important.mp3', NULL, 3, 'adjective'),
+('challenge', '/ˈtʃælɪndʒ/', '挑战', 'a difficult task or situation', 'Learning English is a challenge for me.', '学习英语对我来说是个挑战。', 'audio/challenge.mp3', NULL, 3, 'noun'),
+('success', '/səkˈses/', '成功', 'the accomplishment of an aim or purpose', 'Hard work leads to success.', '努力工作会带来成功。', 'audio/success.mp3', NULL, 3, 'noun'),
+('knowledge', '/ˈnɑːlɪdʒ/', '知识', 'facts, information, and skills acquired through experience', 'Knowledge is power.', '知识就是力量。', 'audio/knowledge.mp3', NULL, 4, 'noun'),
+('opportunity', '/ˌɑːpərˈtuːnəti/', '机会', 'a set of circumstances that makes it possible to do something', 'This is a great opportunity to learn.', '这是学习的好机会。', 'audio/opportunity.mp3', NULL, 4, 'noun'),
+('achievement', '/əˈtʃiːvmənt/', '成就', 'a thing done successfully with effort', 'Graduation is a great achievement.', '毕业是一项伟大的成就。', 'audio/achievement.mp3', NULL, 4, 'noun'),
+('motivation', '/ˌmoʊtəˈveɪʃən/', '动力', 'the reason or reasons one has for acting or behaving in a particular way', 'She has great motivation to succeed.', '她有很强的成功动力。', 'audio/motivation.mp3', NULL, 4, 'noun'),
+('creativity', '/ˌkriːeɪˈtɪvəti/', '创造力', 'the use of imagination or original ideas to create something', 'Art requires creativity.', '艺术需要创造力。', 'audio/creativity.mp3', NULL, 5, 'noun'),
+('innovation', '/ˌɪnəˈveɪʃən/', '创新', 'the introduction of new ideas, methods, or inventions', 'Technology drives innovation.', '技术推动创新。', 'audio/innovation.mp3', NULL, 5, 'noun'),
+('persistence', '/pərˈsɪstəns/', '坚持', 'the continued or prolonged existence of something', 'Success requires persistence.', '成功需要坚持。', 'audio/persistence.mp3', NULL, 5, 'noun'),
+('determination', '/dɪˌtɜːrmɪˈneɪʃən/', '决心', 'firmness of purpose', 'With determination, you can achieve anything.', '有决心，你可以实现任何事情。', 'audio/determination.mp3', NULL, 5, 'noun'),
+('communication', '/kəˌmjuːnɪˈkeɪʃən/', '沟通', 'the imparting or exchanging of information', 'Good communication is important.', '良好的沟通很重要。', 'audio/communication.mp3', NULL, 5, 'noun'),
+('leadership', '/ˈliːdərʃɪp/', '领导力', 'the action of leading a group or organization', 'She shows great leadership skills.', '她展现出很强的领导能力。', 'audio/leadership.mp3', NULL, 6, 'noun'),
+('responsibility', '/rɪˌspɑːnsəˈbɪləti/', '责任', 'the state of having a duty to deal with something', 'Taking responsibility is important.', '承担责任很重要。', 'audio/responsibility.mp3', NULL, 6, 'noun'),
+('excellence', '/ˈeksələns/', '卓越', 'the quality of being outstanding', 'We strive for excellence in everything.', '我们在各方面都追求卓越。', 'audio/excellence.mp3', NULL, 6, 'noun'),
+('transformation', '/ˌtrænsfərˈmeɪʃən/', '转变', 'a change in form, appearance, or character', 'Education brings transformation.', '教育带来转变。', 'audio/transformation.mp3', NULL, 6, 'noun');
