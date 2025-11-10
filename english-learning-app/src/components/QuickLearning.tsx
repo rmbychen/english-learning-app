@@ -45,7 +45,7 @@ export default function QuickLearning() {
   useEffect(() => {
     // 监听网络状态
     const handleOnline = () => setIsOnline(true)
-    const handleOffline = () => setIsOffline(false)
+    const handleOffline = () => setIsOnline(false)
     
     window.addEventListener('online', handleOnline)
     window.addEventListener('offline', handleOffline)

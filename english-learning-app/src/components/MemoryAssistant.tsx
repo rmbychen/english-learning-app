@@ -205,7 +205,7 @@ export default function MemoryAssistant() {
                 )}
 
                 {/* 助记图片 */}
-                {currentWord.mnemonic_image_url && (
+                {currentWord.image_url && (
                   <div className="mt-6">
                     <h4 className="font-medium text-gray-900 mb-3 flex items-center">
                       <Eye className="w-5 h-5 mr-2" />
@@ -213,7 +213,7 @@ export default function MemoryAssistant() {
                     </h4>
                     <div className="border rounded-lg overflow-hidden">
                       <img
-                        src={currentWord.mnemonic_image_url}
+                        src={currentWord.image_url}
                         alt={`${currentWord.word} 助记图`}
                         className="w-full h-48 object-cover"
                       />
